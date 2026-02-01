@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS (required by assignment) -->
+    <style>
+        .internal-style {
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Sulav’s Website</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container main-content">
+
+    <!-- Sticky Heading -->
+    <h2 class="sticky-heading">My Hobbies</h2>
+
+    <!-- Inline CSS Example -->
+    <p style="color: darkred;">This text uses inline CSS.</p>
+
+    <h1 id="special-heading">Welcome to My First Webpage</h1>
+
+    <p class="internal-style">I am learning Web Development and improving my skills daily!</p>
+
+    <h3>My Hobbies</h3>
+    <ol>
+        <li>Programming</li>
+        <li>Reading Books</li>
+        <li>Exploring Nature</li>
+    </ol>
+
+    <h3>My Favorite Foods</h3>
+    <ul>
+        <li>Momo</li>
+        <li>Pizza</li>
+        <li>Chowmein</li>
+    </ul>
+
+    <!-- Box Model Div -->
+    <div class="box-model-demo">
+        This div demonstrates padding, margin, border, and box-sizing.
+    </div>
+
+    <!-- Absolute Positioned Element -->
+    <div class="important-box">Important</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
