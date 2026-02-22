@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Simulation</title>
+</head>
+<body>
+
+    <h2>Login Simulation</h2>
+    
+    <button id="loginBtn">Login</button>
+    <p id="message"></p>
+
+    <script>
+        const button = document.getElementById("loginBtn");
+        const message = document.getElementById("message");
+      button.addEventListener("click", function() {
+            button.disabled = true;
+            message.textContent = "Logging in...";
+            const loginPromise = new Promise(function(resolve, reject) {
+                setTimeout(function() {
+                    resolve("Welcome back!");
+                }, 2000);
+            });
+
+        
+            loginPromise.then(function(result) {
+                message.textContent = result;
+                button.disabled = false; 
+            });
+        });
+    </script>
+
+</body>
+</html>
